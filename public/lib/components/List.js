@@ -7,7 +7,7 @@ class List extends React.Component {
   }
   render(){
     let content = this.props.bookmarks.map(bookmark => {
-      <Link link={bookmark} key={bookmark.id} />
+      return <Link link={bookmark} key={bookmark.id} />
     })
     return (
       <div>
